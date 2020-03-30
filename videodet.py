@@ -2,8 +2,8 @@ import cv2
 
 face = cv2.CascadeClassifier('haar cascade files\haarcascade_frontalface_alt.xml')
 
-cap = cv2.VideoCapture(0)
-#cap = cv2.VideoCapture('x1.mp4')
+cap = cv2.VideoCapture(0) #for webcam
+#cap = cv2.VideoCapture('x1.mp4') #for video
 
 while(True):
     ret, frame = cap.read()
